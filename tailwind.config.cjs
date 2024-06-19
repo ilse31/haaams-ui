@@ -8,6 +8,18 @@ module.exports = {
       fontFamily: {
         primary: ["Inter", ...fontFamily.sans],
         averta: ["AvertaStd", ...fontFamily.sans],
+        Poppins: ["Poppins", ...fontFamily.sans],
+        Roboto: ["Roboto", ...fontFamily.sans],
+        Lato: ["Lato", ...fontFamily.sans],
+        OpenSans: ["Open Sans", ...fontFamily.sans],
+        Montserrat: ["Montserrat", ...fontFamily.sans],
+        Nunito: ["Nunito", ...fontFamily.sans],
+        Raleway: ["Raleway", ...fontFamily.sans],
+        Ubuntu: ["Ubuntu", ...fontFamily.sans],
+        Merriweather: ["Merriweather", ...fontFamily.serif],
+        Playfair: ["Playfair Display", ...fontFamily.serif],
+        Lora: ["Lora", ...fontFamily.serif],
+        RobotoSlab: ["Roboto Slab", ...fontFamily.serif],
       },
       colors: {
         primary: {

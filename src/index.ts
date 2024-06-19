@@ -1,5 +1,4 @@
 import "./index.css";
+import { Button, Input, Text } from "./components";
 
-import Button from "./components/Button/Button";
-
-export { Button };
+export { Button, Input, Text };
