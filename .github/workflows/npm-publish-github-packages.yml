@@ -27,7 +27,7 @@ jobs:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
-      - run: npm config set registry https://npm.pkg.github.com/ # Set the registry to GitHub Packages
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.TOKEN_GH }}" > ~/.npmrc # Set the auth token
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.TOKEN_GH}}
+          NODE_AUTH_TOKEN: ${{ secrets.TOKEN_GH }}
