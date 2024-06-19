@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Haaams-Ui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this is some component from ilse31
 
-Currently, two official plugins are available:
+list component support
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Button [DONE]
+- Forms Input [DONE]
+- Text [DONE]
+- Toast
+- Table
 
-## Expanding the ESLint configuration
+This component on development, i will create the storybook soon
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage/Examples
 
-- Configure the top-level `parserOptions` property like this:
+```javascript
+import "haaams-ui/dist/style.css";
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+function App() {
+  const [count, setCount] = useState(0);
+  return (
+    <>
+      <Text className='text-white' variant='h1'>
+        Vite + React
+      </Text>
+      <Button size='lg' variant='ghost' onClick={Fn()}>
+        count is {count}
+      </Button>
+    </>
+  );
 }
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
