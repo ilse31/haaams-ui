@@ -130,13 +130,19 @@ export default function Input({
 							color === 'gray' && [
 								' focus:border-gray-500 focus:ring-gray-500 border-gray-300 rounded-lg shadow-sm',
 							],
-							color === 'indigo' && [
-								' focus:border-indigo-500 focus:ring-indigo-500 border-gray-300 rounded-lg shadow-sm',
+							color === 'cyan' && [
+								' focus:border-cyan-500 focus:ring-cyan-500 border-gray-300 rounded-lg shadow-sm',
+							],
+							color === 'emerald' && [
+								' focus:border-emerald-500 focus:ring-emerald-500 border-gray-300 rounded-lg shadow-sm',
 							],
 						],
 						variant === 'solid' && [
 							color === 'sky' && [
 								' bg-sky-50 border-transparent focus:border-sky-500 focus:ring-sky-500 rounded-lg shadow-sm',
+							],
+							color === 'gray' && [
+								' bg-gray-50 border-transparent focus:border-gray-500 focus:ring-gray-500 rounded-lg shadow-sm',
 							],
 							color === 'pink' && [
 								' bg-pink-50 border-transparent focus:border-pink-500 focus:ring-pink-500 rounded-lg shadow-sm',
@@ -169,6 +175,12 @@ export default function Input({
 						variant === 'underlined' && [
 							color === 'sky' && [
 								' focus:border-b-sky-500 border-b-2 border-0 border-gray-200 focus:outline-none focus:ring-0',
+							],
+							color === 'emerald' && [
+								' focus:border-b-emerald-500 border-b-2 border-0 border-gray-200 focus:outline-none focus:ring-0',
+							],
+							color === 'gray' && [
+								' focus:border-b-gray-500 border-b-2 border-0 border-gray-200 focus:outline-none focus:ring-0',
 							],
 							color === 'pink' && [
 								' focus:border-b-pink-500 border-b-2 border-0 border-gray-200 focus:outline-none focus:ring-0',
