@@ -30,7 +30,9 @@ export type InputProps = {
 	containerClassName?: string;
 	errorMessage?: string;
 	color?: (typeof ButtonColor)[number];
+	labelColor?: 'primary' | 'white' | 'danger' | 'secondary' | 'tertiary';
 	variant?: 'outline' | 'solid' | 'underlined';
+	required?: boolean;
 } & React.ComponentPropsWithoutRef<'input'>;
 
 const ButtonColor = [
@@ -61,6 +63,8 @@ export default function Input({
 	containerClassName,
 	errorMessage,
 	color = 'sky',
+	labelColor = 'primary',
+	required = false,
 	variant = 'outline',
 	...rest
 }: InputProps) {
@@ -70,11 +74,12 @@ export default function Input({
 		<div className={containerClassName}>
 			{withLabel && (
 				<Typography
+					color={labelColor}
 					as='label'
 					variant='s3'
 					className='block'
 					htmlFor={id}>
-					{label}
+					{label} {required && <span className='text-danger'>*</span>}
 				</Typography>
 			)}
 			<div className={clsx('relative', withLabel && 'mt-1')}>
@@ -94,12 +99,13 @@ export default function Input({
 					{...rest}
 					type={type}
 					name={id}
+					required={required}
 					id={id}
 					readOnly={readOnly}
 					disabled={disabled}
 					className={clsx(
 						'flex w-full',
-						'min-h-[2.25rem] py-0 md:min-h-[2.5rem]',
+						'min-h-[2.25rem] py-0 md:min-h-[2.5rem] text-black',
 						(readOnly || disabled) && LeftIcon && 'pl-9',
 						rightNode && 'pr-10',
 						variant === 'outline' && [
