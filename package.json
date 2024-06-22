@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/ilse31/haaams-ui",
+  "homepage": "https://haaams-ui.netlify.app/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ilse31/haaams-ui.git"
