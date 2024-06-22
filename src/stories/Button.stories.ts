@@ -51,7 +51,7 @@ export const Secondary: Story = {
   },
 };
 
-export const hasLeftIcon: Story = {
+export const HasLeftIcon: Story = {
   args: {
     variant: "primary",
     size: "base",
@@ -61,7 +61,7 @@ export const hasLeftIcon: Story = {
   },
 };
 
-export const hasRightIcon: Story = {
+export const HasRightIcon: Story = {
   args: {
     variant: "primary",
     size: "base",
@@ -76,8 +76,8 @@ export const Danger: Story = {
     variant: "danger",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Outline: Story = {
@@ -85,8 +85,8 @@ export const Outline: Story = {
     variant: "outline",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Ghost: Story = {
@@ -94,8 +94,8 @@ export const Ghost: Story = {
     variant: "ghost",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Warning: Story = {
@@ -103,8 +103,8 @@ export const Warning: Story = {
     variant: "warning",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Sky: Story = {
@@ -112,8 +112,8 @@ export const Sky: Story = {
     variant: "sky",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Rose: Story = {
@@ -121,8 +121,8 @@ export const Rose: Story = {
     variant: "rose",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Pink: Story = {
@@ -130,8 +130,8 @@ export const Pink: Story = {
     variant: "pink",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Purple: Story = {
@@ -139,8 +139,8 @@ export const Purple: Story = {
     variant: "purple",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Violet: Story = {
@@ -148,8 +148,8 @@ export const Violet: Story = {
     variant: "violet",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Indigo: Story = {
@@ -157,8 +157,8 @@ export const Indigo: Story = {
     variant: "indigo",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
 
 export const Cyan: Story = {
@@ -166,6 +166,6 @@ export const Cyan: Story = {
     variant: "cyan",
     size: "lg",
     isLoading: false,
-    children: "Base Button"
-  }
+    children: "Base Button",
+  },
 };
