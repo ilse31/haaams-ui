@@ -1,0 +1,4 @@
+[build] 
+    base="./"
+    command = "build-storybook"
+    publish="./storybook-static"
