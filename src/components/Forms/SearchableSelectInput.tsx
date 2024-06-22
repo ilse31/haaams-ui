@@ -18,6 +18,7 @@ export type SearchableSelectInputProps = {
   //   validation?: any; // Removed RegisterOptions type, not needed now
   options: { value: string; label: string }[];
   containerClassName?: string;
+  required?: boolean;
   error?: string;
 } & React.ComponentPropsWithoutRef<"select"> &
   ExtractProps<Select>;
@@ -28,12 +29,13 @@ export default function SearchableSelectInput({
   label,
   helperText,
   id,
-  isMulti = false,
+  isMulti = true,
   placeholder,
   options,
   hideError = false,
   containerClassName,
   error,
+  required,
   ...rest
 }: SearchableSelectInputProps) {
   const [selectedValue, setSelectedValue] = useState<string | string[] | null>(
@@ -100,8 +102,8 @@ export default function SearchableSelectInput({
       background: state.isFocused
         ? "var(--color-primary-50)"
         : state.isSelected
-        ? "var(--color-primary-100)"
-        : "white",
+          ? "var(--color-primary-100)"
+          : "white",
       ":hover": {
         background: "#E5E7EB",
       },
@@ -161,7 +163,7 @@ export default function SearchableSelectInput({
     <div className={containerClassName}>
       {withLabel && (
         <Text as='label' variant='s3' className='block' htmlFor={id}>
-          {label}
+          {label} {required && <span className='text-danger'>*</span>}
         </Text>
       )}
       <div
