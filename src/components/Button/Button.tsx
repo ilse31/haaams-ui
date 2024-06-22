@@ -3,7 +3,7 @@ import { IconType } from "react-icons";
 import clsxm from "../../libs/clsx";
 import { ImSpinner2 } from "react-icons/im";
 
-const ButtonVariant = [
+export const ButtonVariant = [
   "primary",
   "secondary",
   "danger",
@@ -18,9 +18,9 @@ const ButtonVariant = [
   "indigo",
   "cyan",
 ] as const;
-const ButtonSize = ["sm", "base", "lg"] as const;
+export const ButtonSize = ["sm", "base", "lg"] as const;
 
-type ButtonProps = {
+export type ButtonProps = {
   isLoading?: boolean;
   variant?: (typeof ButtonVariant)[number];
   size?: (typeof ButtonSize)[number];
