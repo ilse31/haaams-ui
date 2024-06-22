@@ -2,15 +2,10 @@
 
 this is some component from ilse31
 
-list component support
-
-- Button [DONE]
-- Forms Input [DONE]
-- Text [DONE]
-- Toast
-- Table
-
+list component support you can see in Storybook
 This component on development, i will create the storybook soon
+
+If you found a bug, please create issue on my repository and then you can fix them
 
 ## Usage/Examples
 
