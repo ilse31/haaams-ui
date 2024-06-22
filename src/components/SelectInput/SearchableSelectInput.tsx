@@ -29,7 +29,7 @@ export default function SearchableSelectInput({
   label,
   helperText,
   id,
-  isMulti = true,
+  isMulti = false,
   placeholder,
   options,
   hideError = false,
