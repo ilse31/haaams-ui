@@ -27,14 +27,17 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_097096de315e257"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "lucide-react": "^0.396.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
     "react-icons": "^5.2.1",
+    "react-image-lightbox-rotation": "^5.1.4-rotate",
     "react-select": "^5.8.0",
     "tailwind-merge": "^2.3.0"
   },
@@ -60,6 +63,7 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.19",
+    "chromatic": "^11.5.4",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
