@@ -2,9 +2,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { UploadDropzone } from "../components";
 import { FileWithPreview } from "../libs/dropzone";
 const meta = {
-  title: "Component/Upload",
+  title: "Component/Inputs/Upload",
   component: UploadDropzone,
-
   tags: ["autodocs"],
   argTypes: {
     accept: { control: "text" },

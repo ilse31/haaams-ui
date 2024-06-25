@@ -1,29 +1,29 @@
-import * as React from 'react';
-import clsxm from '../../libs/clsx';
+import * as React from "react";
+import clsxm from "../../libs/clsx";
 
-const CARD_SIZE = ['sm', 'base'] as const;
+const CARD_SIZE = ["sm", "base"] as const;
 type CardSize = (typeof CARD_SIZE)[number];
 
 type SimpleCardProps = {
-	size?: CardSize;
-} & React.ComponentPropsWithoutRef<'div'>;
+  size?: CardSize;
+} & React.ComponentPropsWithoutRef<"div">;
 
 export default function SimpleCard({
-	className,
-	size = 'base',
-	...rest
+  className,
+  size = "base",
+  ...rest
 }: SimpleCardProps) {
-	return (
-		<div
-			className={clsxm(
-				'bg-white shadow-md',
-				[
-					size === 'sm' && ['p-4', 'rounded-lg'],
-					size === 'base' && ['p-5', 'rounded-xl'],
-				],
-				className
-			)}
-			{...rest}
-		/>
-	);
+  return (
+    <div
+      className={clsxm(
+        "bg-white shadow-md",
+        [
+          size === "sm" && ["p-4", "rounded-lg"],
+          size === "base" && ["p-5", "rounded-xl"],
+        ],
+        className
+      )}
+      {...rest}
+    />
+  );
 }

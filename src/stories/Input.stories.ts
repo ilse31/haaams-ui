@@ -2,10 +2,10 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Input } from "../components";
 
-import { AiFillAlert } from "react-icons/ai";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const meta = {
-  title: "Component/Input",
+  title: "Component/Inputs/Input",
   component: Input,
   tags: ["autodocs"],
   argTypes: {
@@ -68,15 +68,15 @@ export const Default: Story = {
 export const HasLeftIcon: Story = {
   args: {
     label: "Label",
-    placeholder: "Placeholder",
-    helperText: "Helper Text",
+    placeholder: "Search for something",
+    helperText: "You can search for anything",
     id: "inputleftIcon",
     type: "text",
     readOnly: false,
     hideError: false,
-    leftIcon: AiFillAlert,
+    leftIcon: AiOutlineSearch,
     containerClassName: "container",
-    errorMessage: "Error Message",
+    errorMessage: "Search cannot be empty",
     variant: "outline",
     color: "sky",
     required: false,

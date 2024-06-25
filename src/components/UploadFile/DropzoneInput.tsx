@@ -6,11 +6,6 @@ import { FileWithPreview } from "../../libs/dropzone";
 import Text from "../Typhography/Text";
 import FilePreview from "./FilePreview";
 
-// import FilePreview from "@/components/forms/FilePreview";
-// import Typography from "@/components/typography/Typography";
-
-// import { FileWithPreview } from "@/types/dropzone";
-
 type DropzoneInputProps = {
   accept?: Accept;
   helperText?: string;
