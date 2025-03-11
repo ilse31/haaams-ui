@@ -8,6 +8,7 @@ import DevelopmentCard from "./Card/DevelopmentCard";
 import StaticCard from "./Card/StaticCard";
 import SimpleCard from "./Card/Card";
 import Password from "./Forms/Password";
+import Checkbox from "./Forms/Checkbox";
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   StaticCard,
   SimpleCard,
   Password,
+  Checkbox,
 };
